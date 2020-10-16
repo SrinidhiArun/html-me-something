@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 
-<html><head>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="normalize.css" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
     <title>Srinidhi - Baking experiments</title>
 
 </head>
 <body>
+                
     <header>
-        <h1>Cakes I Baked So Far</h1>
-        <nav>
-            <ul>
-                <li><a href="#firsttry">My First Try </a></li>
-                <li><a href="#second-bday">Daughter's Second Birthday</a></li>
-                <li><a href="#arun-bday2018">My Husbands Birthday - 2018</a></li>
-                <li><a href="#fourth-anniversary"> Fourth Wedding Anniversary </a></li>
-                <li><a href="#third-bday">Daughter's Third Birthday </a></li>
-                <li><a href="#arun-bday2019">My Husbands Birthday - 2019</a></li>
-                <li><a href="#friend-bday2019">Cake For My Friend's Birthday-2019</a></li>
-                <li><a href="#fifth-anniversary">Fifth Wedding Anniversary </a></li>
-                <li><a href="#friend-bday2020">Cake For My Friend's Birthday-2020</a></li>
-                <li><a href="#latest-cake">Daughter's Fourth Birthday </a></li>
+                  
+        
+        <!-- Sidebar (hidden by default) -->
+      
+        <nav id="mySidebar">
+            <ul> 
+                <li><a href="javascript:void(0)" onclick="close_sidebar()"
+                    class="close">Close Menu</a></li>
+                <li><a href="#firsttry" onclick="close_sidebar()">My First Try </a></li>
+                <li><a href="#second-bday" onclick="close_sidebar()">Daughter's Second Birthday</a></li>
+                <li><a href="#arun-bday2018" onclick="close_sidebar()">My Husbands Birthday - 2018</a></li>
+                <li><a href="#fourth-anniversary" onclick="close_sidebar()"> Fourth Wedding Anniversary </a></li>
+                <li><a href="#third-bday" onclick="close_sidebar()">Daughter's Third Birthday </a></li>
+                <li><a href="#arun-bday2019" onclick="close_sidebar()">My Husbands Birthday - 2019</a></li>
+                <li><a href="#friend-bday2019" onclick="close_sidebar()">Cake For My Friend's Birthday-2019</a></li>
+                <li><a href="#fifth-anniversary" onclick="close_sidebar()">Fifth Wedding Anniversary </a></li>
+                <li><a href="#friend-bday2020"onclick="close_sidebar()">Cake For My Friend's Birthday-2020</a></li>
+                <li><a href="#latest-cake" onclick="close_sidebar()">Daughter's Fourth Birthday </a></li>
             </ul>
         </nav>
+
+        <div class="top">
+                <div class="subtop">
+                  <div class="button" onclick="open_sidebar()">☰</div>
+                 
+                  <div class = "heading"><h1>Cakes I Baked So Far</h1></div>
+                  
+                </div>
+              </div>
+        
     </header>
 
-    <main>
+    <main class = "content">
         <article>
-            <section>
+            <section class = "sub">
                 <a name="firsttry"></a>
                 <h2>My First Try</h2>
                 <p>This was my first try baking cake. Thought of making a layered choclate cake. It was a trial for my daughter's upcoming birthday</p>
@@ -36,7 +58,7 @@
                 </figure>
                     
             </section>
-            <section>
+            <section class = "sub">
                 <a name="second-bday"></a>
                 <h2>Daughter's Second Birthday </h2>
                 <figure>
@@ -44,7 +66,7 @@
                     <figcaption>Choclate cake for second birthday</figcaption>
                 </figure>
             </section>
-            <section>
+            <section class = "sub">
                 <a name="arun-bday2018"></a>
                 <h2>My Husband's Birthday - 2018</h2>
                 <figure>
@@ -52,7 +74,7 @@
                     <figcaption>My first cake for my husband</figcaption>
                 </figure>
             </section>
-            <section>                   
+            <section class = "sub">                   
                 <a name="fourth-anniversary"></a>
                 <h2>Fourth Wedding Anniversary</h2>
                 <p>This was supposed to be a black forest cake and that to two layered. And I forgot cherries. I think I have invented a new cake since I have replaced cherries with fresh strawberries.</p>
@@ -61,7 +83,7 @@
                     <figcaption>Two tired cake for my fourth wedding anniversary</figcaption>
                 </figure>
             </section>
-            <section>
+            <section class = "sub">
                 <a name="third-bday"></a>
                 <h2>Daughter's Third Birthday </h2>
                 <figure>
@@ -69,7 +91,7 @@
                     <figcaption>Number cake with rainbow theme</figcaption>
                 </figure>
             </section>
-            <section>
+            <section class = "sub">
                 <a name="arun-bday2019"></a>
                 <h2>My Husband's Birthday - 2019</h2>
                 <figure>
@@ -77,7 +99,7 @@
                     <figcaption>Brown velevt cake(since I forgot to add red color to the cake <span>&#9786;</span>)</figcaption>
                 </figure>
             </section>
-            <section>
+            <section class = "sub">
                     <a name="friend-bday2019"></a>
                     <h2>Cake For My Friend's Birthday-2019</h2>
                     <figure>
@@ -86,7 +108,7 @@
                     </figure>
             </section>
             
-            <section> 
+            <section class = "sub"> 
                 <a name="fifth-anniversary"></a>
                 <h2>Fifth Wedding Anniversary</h2>
                 <p>So far I didn't have proper decorating kit, I managed with &quot; spoons and knife &quot;. This was the first time I started baking seriously and wanted to decorate beautifully. So bought all piping tips, piping bags and round table</p>
@@ -95,7 +117,7 @@
                     <figcaption>Vanilla cake with rosette decor</figcaption>
                 </figure>
             </section>
-            <section>
+            <section class = "sub">
                 <a name="friend-bday2020"></a>
                 <h2>Cake For My Friend's Birthday-2020</h2>
                 <p>This cake was a nightmare. While decorating the cake the cream was almost over and I wanted to write my birthday wishes with choclate ganche and it sticked with cake. With lots of trial the cake turned out good.</p>
@@ -104,7 +126,7 @@
                     <figcaption>Started with one decorating idea, ended with another decor</figcaption>
                 </figure>                
             </section>
-            <section>
+            <section class = "sub">
                 <a name="latest-cake"></a>
                 <h2>Daughter's Fourth Birthday</h2>
                 <p>I think I tested my limits. I wanted to make a Elsa cake, it turned out good. Everyone was suprised. And I am proud of myself, even thinking of opening a baking business &#128521;.</p>                      
@@ -120,6 +142,16 @@
     <footer>
         <p>&copy; 2020 Srinidhi Arun</p>
     </footer>
+    <script>
+            // Script to open and close sidebar
+    function open_sidebar() {
+            document.getElementById("mySidebar").style.display = "block";
+    }
+             
+    function close_sidebar() {
+            document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
 
 
 </body></html>
