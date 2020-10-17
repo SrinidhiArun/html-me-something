@@ -106,11 +106,11 @@ body {
   }
 
  /* Use a media query to add a breakpoint at 800px: */
-@media only screen and (max-width: 600px) {
-  .left, .main, .right {
-    width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  article {
-    width: 80%;
-  }
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+      }
+    article {
+    width: 70%;
+    }
 }
