@@ -52,9 +52,9 @@ body {
   .content{
     margin: 0px;
     padding-top: 100px;
-  padding-right: 300px;
-  padding-bottom: 100px;
-  padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+    padding-left: 300px;
     background-color: whitesmoke;
     margin-top: 0px;
     background-image: url(images/baking-background.jpg);
@@ -66,7 +66,6 @@ body {
     font-size: 30px;
     text-decoration-style: solid;
     text-decoration-color: brown;
-    margin-top: 0px;
     background-image: url(images/baking.webp);
   }
 
@@ -82,9 +81,33 @@ body {
 
   .sub{
     background-color: rgb(248, 245, 245);
+     
+
+  }
+  
+  ul,li{
+      margin: 10px;
+      padding: 0;
+      list-style-type: none;
+      text-align: left;
+      font-style: normal;
+      color: black;
+      font-size: 16px;
+  }
+
+  a{
+    text-decoration:none;
+    color: black;
   }
 
   article{
     margin-top:-80px;
     
   }
+
+ /* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
